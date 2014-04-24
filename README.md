@@ -16,7 +16,6 @@ sudo gem install bundler
 ```
 
 ## Local Preview
-1. Install the latest version of [Node.js](http://nodejs.org)
 ```
 grunt serve
 ```
