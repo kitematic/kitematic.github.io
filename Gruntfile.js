@@ -107,7 +107,7 @@ module.exports = function (grunt) {
         bundleExec: true,
         debugInfo: false,
         lineNumbers: false,
-        loadPath: 'app/_bower_components'
+        loadPath: 'app/_bower_components/foundation/scss'
       },
       dist: {
         files: [{
