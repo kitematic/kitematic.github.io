@@ -1,0 +1,3 @@
+[submodule "app/_less/theme"]
+	path = app/_less/theme
+	url = git@github.com:usekite/theme.git

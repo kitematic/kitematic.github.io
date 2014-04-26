@@ -3,7 +3,7 @@
 
 // Directory reference:
 //   css: css
-//   sass: _scss
+//   less: _less
 //   javascript: js
 //   images: img
 //   fonts: fonts
@@ -21,9 +21,9 @@ module.exports = function (grunt) {
       dist: 'dist'
     },
     watch: {
-      sass: {
-        files: ['<%= yeoman.app %>/_scss/**/*.{scss,sass}'],
-        tasks: ['sass:server', 'autoprefixer:server']
+      less: {
+        files: ['<%= yeoman.app %>/_less/**/*.less'],
+        tasks: ['less:server', 'autoprefixer:server']
       },
       autoprefixer: {
         files: ['<%= yeoman.app %>/css/**/*.css'],
@@ -102,34 +102,22 @@ module.exports = function (grunt) {
         '.jekyll'
       ]
     },
-    sass: {
+    less: {
       options: {
-        bundleExec: true,
-        debugInfo: false,
-        lineNumbers: false,
-        loadPath: 'app/_bower_components/foundation/scss'
+        compress: false,
+        yuicompress: false,
+        optimization: 2,
+        paths: ['<%= yeoman.app %>/_bower_components/bootstrap/less', '<%= yeoman.app %>/_less']
       },
       dist: {
-        files: [{
-          expand: true,
-          cwd: '<%= yeoman.app %>/_scss',
-          src: '**/*.{scss,sass}',
-          dest: '.tmp/css',
-          ext: '.css'
-        }]
+        files: {
+          '.tmp/css/main.css': '<%= yeoman.app %>/_less/main.less'
+        }
       },
       server: {
-        options: {
-          debugInfo: true,
-          lineNumbers: true
-        },
-        files: [{
-          expand: true,
-          cwd: '<%= yeoman.app %>/_scss',
-          src: '**/*.{scss,sass}',
-          dest: '.tmp/css',
-          ext: '.css'
-        }]
+        files: {
+          '.tmp/css/main.css': '<%= yeoman.app %>/_less/main.less'
+        }
       }
     },
     autoprefixer: {
@@ -322,12 +310,12 @@ module.exports = function (grunt) {
     },
     concurrent: {
       server: [
-        'sass:server',
+        'less:server',
         'copy:stageCss',
         'jekyll:server'
       ],
       dist: [
-        'sass:dist',
+        'less:dist',
         'copy:dist'
       ]
     }
@@ -363,7 +351,7 @@ module.exports = function (grunt) {
   grunt.registerTask('check', [
     'clean:server',
     'jekyll:check',
-    'sass:server',
+    'less:server',
     'jshint:all',
     'csslint:check'
   ]);
