@@ -1,6 +1,19 @@
 @import "bootstrap";
 // @import "theme/main.less";
 
+.main {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.hero {
+  background: #4A90E2;
+}
+
+footer {
+  background: #333;
+}
+
 /*
  * Globals
  */
@@ -30,14 +43,15 @@ a:hover {
 html,
 body {
   height: 100%;
-  background-color: #333;
+  background-color: #F6F6F6;
 }
 body {
   color: #fff;
   text-align: center;
-  text-shadow: 0 1px 3px rgba(0,0,0,.5);
-  -webkit-box-shadow: inset 0 0 100px rgba(0,0,0,.5);
-          box-shadow: inset 0 0 100px rgba(0,0,0,.5);
+}
+
+.content-body {
+  background: #fff;
 }
 
 /* Extra markup and styles for table-esque vertical and horizontal centering */
@@ -46,6 +60,8 @@ body {
   width: 100%;
   height: 100%; /* For at least Firefox */
   min-height: 100%;
+  // background: url('/img/pinterest.jpg');
+  // background-size: cover;
 }
 .site-wrapper-inner {
   display: table-cell;

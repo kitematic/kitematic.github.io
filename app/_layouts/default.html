@@ -8,6 +8,7 @@
     <meta name="author" content="">
 
     <title>{{ page.title }}</title>
+
     <!-- build:css({app,.tmp}) /css/main.css -->
     <!-- Custom CSS -->
     <link rel="stylesheet" href="/css/main.css">
@@ -15,42 +16,9 @@
   </head>
 
   <body>
-
-    <div class="site-wrapper">
-
-      <div class="site-wrapper-inner">
-
-        <div class="cover-container">
-
-          <div class="masthead clearfix">
-            <div class="inner">
-              <h3 class="masthead-brand">Kite</h3>
-              <ul class="nav masthead-nav">
-                <li class="active"><a href="#">Sign In</a></li>
-              </ul>
-            </div>
-          </div>
-
-          <div class="inner cover">
-            <h1 class="cover-heading">Cover your page.</h1>
-            <p class="lead">Cover is a one-page template for building simple and beautiful home pages. Download, edit the text, and add your own fullscreen background photo to make it your own.</p>
-            <p class="lead">
-              <a href="#" class="btn btn-lg btn-default">Learn more</a>
-            </p>
-          </div>
-
-          <div class="mastfoot">
-            <div class="inner">
-              <p>&copy; Copyright 2014 Kite</p>
-            </div>
-          </div>
-
-        </div>
-
-      </div>
-
+    <div class="main">
+        {{ content }}
     </div>
-
     <!-- Bootstrap core JavaScript
     ================================================== -->
     <!-- Placed at the end of the document so the pages load faster -->
