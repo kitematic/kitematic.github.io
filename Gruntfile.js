@@ -107,7 +107,7 @@ module.exports = function (grunt) {
         compress: false,
         yuicompress: false,
         optimization: 2,
-        paths: ['<%= yeoman.app %>/_bower_components/bootstrap/less', '<%= yeoman.app %>/_less']
+        paths: ['<%= yeoman.app %>/_less', '<%= yeoman.app %>/_less/theme', '<%= yeoman.app %>/_less/bootstrap']
       },
       dist: {
         files: {
@@ -241,9 +241,9 @@ module.exports = function (grunt) {
             'img/**/*',
             'fonts/**/*',
             // Like Jekyll, exclude files & folders prefixed with an underscore.
-            '!**/_*{,/**}'
+            '!**/_*{,/**}',
             // Explicitly add any files your site needs for distribution here.
-            //'_bower_components/jquery/jquery.js',
+            // '_bower_components/bootstrap/js/**/*.js',
             //'favicon.ico',
             //'apple-touch*.png'
           ],
