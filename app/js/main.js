@@ -9,7 +9,7 @@ $(document).ready(function() {
     first.insertAfter(last);
   });
 
-	$('.signup-form').submit(function(event) {
+	/*$('.signup-form').submit(function(event) {
     event.preventDefault();
     var $form = $(this);
 		var action = $form.attr('action');
@@ -27,5 +27,5 @@ $(document).ready(function() {
 			}
 		});
     return false;
-	});
+	});*/
 });
