@@ -6,4 +6,4 @@ permalink: /
 
 ## Getting Started
 
-The first thing you'll
+The first thing you'll test
