@@ -1,8 +1,10 @@
 ---
-layout: post
-title:  "Welcome to Jekyll!"
-date:   2014-04-23 18:10:14
-categories: jekyll update
+layout: blog_item
+title:  Welcome to Kite
+date:   2014-07-28 18:10:14
+categories: blog
+author: Jeff Morgan
+twitter: jmorgan
 ---
 
 You'll find this post in your `_posts` directory - edit this post and re-build (or run with the `-w` switch) to see your changes!

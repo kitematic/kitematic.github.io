@@ -1,0 +1,70 @@
+.kite-nav {
+  .nav-logo {
+    margin: 0 auto;
+    margin-top: 30px;
+    margin-bottom: 0px;
+    width: 42px;
+    height: 40px;
+    background-image: url(/img/logo_small.png);
+  }
+
+  .navbar {
+    font-size: 14px;
+    padding-top: 3px;
+    padding-bottom: 3px;
+    margin-bottom: 0;
+    border-radius: 0;
+
+    .navbar-collapse {
+      padding-left: 0;
+    }
+
+    .container {
+      // border-bottom: 1px solid #E8E8E8;
+    }
+
+    a {
+      color: #878787;
+      &:hover {
+        color: #565A5C;
+      }
+    }
+
+    .navbar-nav > li > a {
+      text-shadow: none;
+
+      padding: 8px 10px;
+
+      &:hover {
+        background: none;
+      }
+    }
+    .navbar-nav > .active > a {
+      background: none;
+      text-shadow: none;
+
+      &:hover {
+        background: none;
+      }
+    }
+  }
+
+  &.faded {
+    .nav-logo {
+      background-image: url(/img/logo_small_white.png);
+    }
+    .navbar {
+      background: none;
+      a {
+        color: rgba(255, 255, 255, 0.8);
+        &:hover {
+          color: white;
+        }
+      }
+
+      .container {
+        // border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+      }
+    }
+  }
+}

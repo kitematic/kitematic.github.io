@@ -19,8 +19,7 @@ include: ['.htaccess']
 future: true
 show_drafts: true
 
-# Markdown library
-markdown: redcarpet
-#   extensions: ['fenced_code_blocks', 'smart']
-
 pygments: true
+
+paginate: 5
+paginate_path: "blog/page:num"

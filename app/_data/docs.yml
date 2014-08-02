@@ -1,0 +1,18 @@
+- title: Introduction
+  docs:
+  - index
+  - installation
+
+- title: Kite Server
+  docs:
+  - apps-starting
+  - apps-connecting
+
+- title: Kite for Mac and Windows
+  docs:
+  - apps-starting
+  - apps-connecting
+
+- title: Images
+  docs:
+  - images-from-github

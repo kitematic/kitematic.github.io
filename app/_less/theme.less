@@ -6,15 +6,112 @@
 @import "variables.less";
 @import "mixins.less";
 
-@brand-primary: #0E8DEC;
-
 html, body {
-  font-family: "proxima-nova", sans-serif;
+  font-family: "nimbus-sans", HelveticaNeue, Helvetica, Arial, sans-serif;
+  height: 100%;
+  background: #F1F4F6;
 }
+
+.container {
+  max-width: 960px;
+  min-width: 960px;
+}
+
+@grid-gutter-width: 20px;
+
+.row.no-gutter {
+  margin-left: 0;
+  margin-right: 0;
+}
+
+.row.no-gutter [class*='col-']:not(:first-child),
+.row.no-gutter [class*='col-']:not(:last-child) {
+  padding-right: 0;
+  padding-left: 0;
+}
+
+.kite-panel {
+  border: 1px solid #E0E0E0;
+  border-radius: 2px;
+  height: 100%;
+
+  color: #6F7C82;
+  background: white;
+  -moz-box-shadow:    0px 1px 4px 0px rgba(0,0,0,0.14);
+  box-shadow:         0px 1px 4px 0px rgba(0,0,0,0.14);
+
+  h1, h2, h3, h4 {
+    color: #444444;
+  }
+  p {
+    font-size: 16px;
+    font-weight: 300;
+  }
+}
+
+@brand-primary:         #4A9AEC;
+@brand-success:         #5cb85c;
+@brand-info:            #5bc0de;
+@brand-warning:         #f0ad4e;
+@brand-danger:          #FF5C70;
+
+
+@padding-base-vertical:     6px;
+@padding-base-horizontal:   18px;
+
+@padding-large-vertical:    8px;
+@padding-large-horizontal:  24px;
+
+@padding-small-vertical:    5px;
+@padding-small-horizontal:  10px;
+
+@padding-xs-vertical:       1px;
+@padding-xs-horizontal:     5px;
+
+
+@font-size-base:          14px;
+@font-size-large:         ceil((@font-size-base * 1.14)); // ~18px
+@font-size-small:         ceil((@font-size-base * 0.85)); // ~12px
+
+@font-size-h1:            floor((@font-size-base * 2.6)); // ~36px
+@font-size-h2:            floor((@font-size-base * 2.15)); // ~30px
+@font-size-h3:            ceil((@font-size-base * 1.7)); // ~24px
+@font-size-h4:            ceil((@font-size-base * 1.25)); // ~18px
+@font-size-h5:            @font-size-base;
+@font-size-h6:            ceil((@font-size-base * 0.85)); // ~12px
+
 
 //
 // Buttons
 // --------------------------------------------------
+
+@btn-font-weight:                normal;
+
+@btn-default-color:              #333;
+@btn-default-bg:                 #fff;
+@btn-default-border:             #ccc;
+
+@btn-primary-color:              #fff;
+@btn-primary-bg:                 @brand-primary;
+@btn-primary-border:             darken(@btn-primary-bg, 5%);
+
+@btn-success-color:              #fff;
+@btn-success-bg:                 @brand-success;
+@btn-success-border:             darken(@btn-success-bg, 5%);
+
+@btn-info-color:                 #fff;
+@btn-info-bg:                    @brand-info;
+@btn-info-border:                darken(@btn-info-bg, 5%);
+
+@btn-warning-color:              #fff;
+@btn-warning-bg:                 @brand-warning;
+@btn-warning-border:             darken(@btn-warning-bg, 5%);
+
+@btn-danger-color:               #fff;
+@btn-danger-bg:                  @brand-danger;
+@btn-danger-border:              darken(@btn-danger-bg, 5%);
+
+@btn-link-disabled-color:        @gray-light;
 
 // Common styles
 .btn-default,
@@ -30,28 +127,17 @@ html, body {
 
 // Mixin for generating new styles
 .btn-styles(@btn-color: #555) {
-  #gradient > .vertical(@start-color: @btn-color; @end-color: darken(@btn-color, 12%));
-  .reset-filter(); // Disable gradients for IE9 because filter bleeds through rounded corners
+  // #gradient > .vertical(@start-color: @btn-color; @end-color: darken(@btn-color, 12%));
+  // .reset-filter(); // Disable gradients for IE9 because filter bleeds through rounded corners
+  background: @btn-color;
   background-repeat: repeat-x;
-  border-color: darken(@btn-color, 14%);
 
-  /*&:hover,
-  &:focus  {
-    background-color: darken(@btn-color, 12%);
-    background-position: 0 -15px;
+  &:hover {
+    background: lighten(@btn-color, 10%);
   }
 
-  &:active,
-  &.active {
-    background-color: darken(@btn-color, 12%);
-    border-color: darken(@btn-color, 14%);
-  }
-
-  &:disabled,
-  &[disabled] {
-    background-color: darken(@btn-color, 12%);
-    background-image: none;
-  }*/
+  border: none;
+  border-radius: 3px;
 }
 
 // Common styles
@@ -60,22 +146,37 @@ html, body {
   &:active,
   &.active {
     background-image: none;
+    box-shadow: none;
   }
 }
 
 // Apply the mixin to the buttons
-.btn-default { .btn-styles(@btn-default-bg); text-shadow: 0 1px 0 #fff; border-color: #ccc; }
+.btn-default {
+  .btn-styles(@btn-default-bg);
+  &:hover {
+    background: darken(@btn-default-bg, 10%);
+  }
+}
 .btn-primary {
   .btn-styles(@btn-primary-bg);
-  #gradient > .vertical(@start-color: #2198F3; @end-color: #0E81D9);
-  .reset-filter(); // Disable gradients for IE9 because filter bleeds through rounded corners
-  background-repeat: repeat-x;
 }
 .btn-success { .btn-styles(@btn-success-bg); }
 .btn-info    { .btn-styles(@btn-info-bg); }
 .btn-warning { .btn-styles(@btn-warning-bg); }
 .btn-danger  { .btn-styles(@btn-danger-bg); }
 
+
+.btn-faded {
+  background: rgba(255, 255, 255, 0.1);
+  border: 1px solid rgba(255, 255, 255, 0.8);
+  color: rgba(255, 255, 255, 0.8);
+
+  &:hover {
+    background: rgba(255, 255, 255, 0.2);
+    border: 1px solid rgba(255, 255, 255, 1.0);
+    color: white;
+  }
+}
 
 
 //
@@ -111,6 +212,14 @@ html, body {
 // Navbar
 // --------------------------------------------------
 
+// Basics of a navbar
+@navbar-height:                    36px;
+@navbar-margin-bottom:             @line-height-computed;
+@navbar-border-radius:             @border-radius-base;
+@navbar-padding-horizontal:        floor((@grid-gutter-width / 2));
+@navbar-padding-vertical:          ((@navbar-height - @line-height-computed) / 2);
+@navbar-collapse-max-height:       340px;
+
 // Default navbar
 .navbar-default {
   #gradient > .vertical(@start-color: lighten(@navbar-default-bg, 10%); @end-color: @navbar-default-bg);
@@ -145,40 +254,12 @@ html, body {
   }
 }
 
-.navbar-kite {
-  background: none;
-  color: white;
-  font-size: 16px;
-
-  a {
-    color: white;
-  }
-
-  .navbar-nav > li > a {
-    text-shadow: none;
-
-    &:hover {
-      background: none;
-    }
-  }
-  .navbar-nav > .active > a {
-    background: none;
-    text-shadow: none;
-
-    &:hover {
-      background: none;
-    }
-  }
-}
-
 // Undo rounded corners in static and fixed navbars
 .navbar-static-top,
 .navbar-fixed-top,
 .navbar-fixed-bottom {
   border-radius: 0;
 }
-
-
 
 //
 // Alerts
