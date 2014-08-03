@@ -4,6 +4,7 @@
 @import "blog.less";
 @import "nav.less";
 @import "faq.less";
+@import "footer.less";
 
 @keyframes screenshot-fadein {
   from {
@@ -17,13 +18,9 @@
 }
 
 .home {
-  background-image: -o-linear-gradient(83deg, #C9F2DD 0%, #65C5E2 29%, #1366AF 100%);
-  background-image: -moz-linear-gradient(83deg, #C9F2DD 0%, #65C5E2 29%, #1366AF 100%);
-  background-image: -ms-linear-gradient(83deg, #C9F2DD 0%, #65C5E2 29%, #1366AF 100%);
-  background-image: linear-gradient(7deg, #C9F2DD 0%, #65C5E2 29%, #1366AF 100%);
-  // background: #4A9AEC;
-  height: 100%;
-  min-height: 920px;
+  @media (min-width: @screen-sm-min) {
+    height: 100%;
+  }
 
   max-height: 1100px;
   color: #777;
@@ -36,14 +33,35 @@
     z-index: 5;
     background: white;
     border-top: 1px solid #dedede;
+    border-bottom: 1px solid #dedede;
+    padding-bottom: 14px;
+  }
+
+  .welcome {
+
   }
 
   .header {
+    background-image: -o-linear-gradient(83deg, #C9F2DD 0%, #65C5E2 29%, #1366AF 100%);
+    background-image: -moz-linear-gradient(83deg, #C9F2DD 0%, #65C5E2 29%, #1366AF 100%);
+    background-image: -ms-linear-gradient(83deg, #C9F2DD 0%, #65C5E2 29%, #1366AF 100%);
+    background-image: linear-gradient(7deg, #C9F2DD 0%, #65C5E2 29%, #1366AF 100%);
     position: relative;
     z-index: 4;
     height: 100%;
     width: 100%;
-    min-height: 890px;
+    overflow: hidden;
+    @media (max-width: @screen-xs-max) {
+      padding-bottom: 50px;
+      min-height: 580px;
+
+      .hero {
+        margin-top: 20px;
+      }
+    }
+    @media (min-width: @screen-sm-min) {
+      min-height: 920px;
+    }
   }
 
   .screenshot {
@@ -53,6 +71,14 @@
     z-index: 3;
 
     animation: screenshot-fadein 0.4s;
+    img {
+      @media (max-width: @screen-xs-max) {
+        display: block;
+        width: 100% \9;
+        max-width: 100%;
+        height: auto;
+      }
+    }
   }
 
   .signup-form {
@@ -65,25 +91,11 @@
 
       &:focus {
         box-shadow: none;
-        border: 2px solid white;
       }
 
       &:active {
         box-shadow: none;
       }
-    }
-
-    ::-webkit-input-placeholder { /* WebKit browsers */
-      color: rgba(255, 255, 255, 0.4);
-    }
-    :-moz-placeholder { /* Mozilla Firefox 4 to 18 */
-      color: rgba(255, 255, 255, 0.4);
-    }
-    ::-moz-placeholder { /* Mozilla Firefox 19+ */
-      color: rgba(255, 255, 255, 0.4);
-    }
-    :-ms-input-placeholder { /* Internet Explorer 10+ */
-      color: rgba(255, 255, 255, 0.4);
     }
   }
 

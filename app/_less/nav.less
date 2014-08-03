@@ -1,26 +1,68 @@
+@import "retina.less";
+
 .kite-nav {
-  .nav-logo {
-    margin: 0 auto;
-    margin-top: 30px;
-    margin-bottom: 0px;
-    width: 42px;
-    height: 40px;
-    background-image: url(/img/logo_small.png);
+  .navbar-logo {
+    width: 74px;
+    height: 24px;
+
+    .at2x('/img/navbar_brand.png', 74px, 24px);
   }
 
   .navbar {
+
+    .navbar-collapse {
+      border: none;
+    }
+
+    .navbar-toggle {
+      position: relative;
+      float: right;
+      margin-right: @navbar-padding-horizontal;
+      padding: 9px 10px;
+      .navbar-vertical-align(34px);
+      background-color: transparent;
+      background-image: none; // Reset unusual Firefox-on-Android default style; see https://github.com/necolas/normalize.css/issues/214
+      border: 1px solid transparent;
+      border-radius: @border-radius-base;
+
+      // We remove the `outline` here, but later compensate by attaching `:hover`
+      // styles to `:focus`.
+      &:focus {
+        outline: 0;
+      }
+
+      // Bars
+      .icon-bar {
+        display: block;
+        width: 22px;
+        height: 2px;
+        border-radius: 1px;
+        background: #878787;
+      }
+      .icon-bar + .icon-bar {
+        margin-top: 4px;
+      }
+
+      @media (min-width: @grid-float-breakpoint) {
+        display: none;
+      }
+    }
+
+
     font-size: 14px;
-    padding-top: 3px;
-    padding-bottom: 3px;
-    margin-bottom: 0;
     border-radius: 0;
+    background: white;
+    border-bottom: 1px solid #E0E0E0;
+
+    .navbar-brand {
+      padding-top: 12px;
+    }
 
     .navbar-collapse {
       padding-left: 0;
     }
 
     .container {
-      // border-bottom: 1px solid #E8E8E8;
     }
 
     a {
@@ -33,7 +75,7 @@
     .navbar-nav > li > a {
       text-shadow: none;
 
-      padding: 8px 10px;
+      // padding: 8px 10px;
 
       &:hover {
         background: none;
@@ -50,11 +92,24 @@
   }
 
   &.faded {
-    .nav-logo {
-      background-image: url(/img/logo_small_white.png);
+    .navbar-logo {
+      .at2x('/img/navbar_brand_faded.png', 74px, 24px);
+
+      &:hover {
+        .at2x('/img/navbar_brand_white.png', 74px, 24px);
+      }
     }
     .navbar {
+      .icon-bar {
+        display: block;
+        width: 22px;
+        height: 2px;
+        border-radius: 1px;
+        background: rgba(255, 255, 255, 0.8);
+      }
+
       background: none;
+      border: none;
       a {
         color: rgba(255, 255, 255, 0.8);
         &:hover {

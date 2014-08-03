@@ -9,12 +9,12 @@
 html, body {
   font-family: "nimbus-sans", HelveticaNeue, Helvetica, Arial, sans-serif;
   height: 100%;
+
   background: #F1F4F6;
 }
 
 .container {
   max-width: 960px;
-  min-width: 960px;
 }
 
 @grid-gutter-width: 20px;
@@ -31,21 +31,25 @@ html, body {
 }
 
 .kite-panel {
-  border: 1px solid #E0E0E0;
-  border-radius: 2px;
   height: 100%;
-
   color: #6F7C82;
   background: white;
-  -moz-box-shadow:    0px 1px 4px 0px rgba(0,0,0,0.14);
-  box-shadow:         0px 1px 4px 0px rgba(0,0,0,0.14);
+  border-radius: 4px;
+  border: 1px solid #E0E0E0;
 
   h1, h2, h3, h4 {
-    color: #444444;
+    color: #333;
   }
   p {
     font-size: 16px;
     font-weight: 300;
+  }
+
+  @media (max-width: @screen-xs-max) {
+    padding-top: 10px;
+    article {
+      padding: 0 10px;
+    }
   }
 }
 
@@ -54,7 +58,6 @@ html, body {
 @brand-info:            #5bc0de;
 @brand-warning:         #f0ad4e;
 @brand-danger:          #FF5C70;
-
 
 @padding-base-vertical:     6px;
 @padding-base-horizontal:   18px;
@@ -213,7 +216,7 @@ html, body {
 // --------------------------------------------------
 
 // Basics of a navbar
-@navbar-height:                    36px;
+@navbar-height:                    50px;
 @navbar-margin-bottom:             @line-height-computed;
 @navbar-border-radius:             @border-radius-base;
 @navbar-padding-horizontal:        floor((@grid-gutter-width / 2));

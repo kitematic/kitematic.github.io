@@ -6,4 +6,5 @@ permalink: /
 
 ## Getting Started
 
-The first thing you'll
+This guide will get you set up with Kite.
+
