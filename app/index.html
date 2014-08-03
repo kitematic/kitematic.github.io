@@ -39,7 +39,9 @@ title: Kite
   <section class="welcome">
     <div class="container">
       {% assign post=site.posts[-1] %}
-      {% include blog_item.html standalone=true %}
+      <div class="kite-panel">
+        {% include blog_item.html standalone=true %}
+      </div>
     </div>
   </section>
   {% include footer.html %}
