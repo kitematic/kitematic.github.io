@@ -10,11 +10,14 @@ This Jekyll project is the landing page for usekite.com and includes:
 1. Install the latest version of [Node.js](http://nodejs.org)
 2. Install [Rubygems](http://rubygems.org/pages/download)
 3. Install [yeoman](http://yeoman.io), bundler and jekyll:
+4. npm install
 ```
 sudo npm install -g yo
 sudo gem install bundler
 sudo gem install jekyll
+npm install
 ```
+
 
 ## Local Preview
 ```
