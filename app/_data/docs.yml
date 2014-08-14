@@ -5,6 +5,7 @@
 
 - title: Images
   docs:
+  - build-your-own-image
   - kite-json-file
 
 - title: Kite Server
