@@ -15,6 +15,7 @@ This Jekyll project is the landing page for usekite.com and includes:
 sudo npm install -g yo
 sudo gem install bundler
 sudo gem install jekyll
+bundle install
 npm install
 ```
 
