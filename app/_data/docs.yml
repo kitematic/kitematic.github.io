@@ -3,9 +3,13 @@
   - index
   - installation
 
+- title: Images
+  docs:
+  - kite-json-file
+
 - title: Kite Server
   docs:
 
-- title: Images
+- title: Contributing
   docs:
-  - images-from-github
+  - setup-kite-for-development
