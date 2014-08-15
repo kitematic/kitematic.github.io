@@ -4,8 +4,10 @@
 
 - title: Apps
   docs:
+  - environment-variables
   - check-app-logs
   - ssh-into-apps
+  - restart-apps
 
 - title: Images
   docs:
