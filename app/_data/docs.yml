@@ -1,15 +1,16 @@
 - title: Introduction
   docs:
   - index
-  - installation
+
+- title: Apps
+  docs:
+  - check-app-logs
+  - ssh-into-apps
 
 - title: Images
   docs:
   - build-your-own-image
   - kite-json-file
-
-- title: Kite Server
-  docs:
 
 - title: Contributing
   docs:

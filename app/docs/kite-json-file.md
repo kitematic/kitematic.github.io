@@ -7,6 +7,8 @@ published: true
 
 ## Kite JSON File
 
+---
+
 The Kite JSON file (kite.json) is similar to package.json for NPM. It describes
 meta data for different Docker images, such as the image name, version,
 description and logo.

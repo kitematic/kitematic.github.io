@@ -7,6 +7,8 @@ published: true
 
 ## Build Your Own Image
 
+---
+
 Kite is fully compatible with Docker, which means you can create an image on
 Kite from any folder with a Dockerfile in it. However, there are many ways
 developers build Dockerfiles and Kite aims to provide developers a better
@@ -43,29 +45,27 @@ Nginx configuration into the image, but used `VOLUME` instead. We believe that
 using volumes extensively is a good practice. They are great for quick code
 changes, persistent data, configuration files and logs.
 
+But what about putting in default or template code now? Because mounted volumes
+will be empty. Don't worry, Kite can take care of that. Here's what a Docker
+image folder looks like with Kite.
 
+```
+html/
+├── Dockerfile          # Dockerfile for building the image
+├── kite.json           # Meta data for the image
+├── logo.png            # Logo of the image
+├── start.sh            # Script on how to start the app
+└── volumes/            # What to put in the volumes
+     ├── code/
+     └── etc/
+          └── nginx/
+               └── sites-available／
+```
 
-### Example
+**Anything in the volumes folder will automatically added to the Docker volumes
+when an app is created from this image. **
 
-{% highlight js %}
-{
-  "name": "html",
-  "version": "0.1.0",
-  "description": "A HTML app powered by Nginx.",
-  "author": "Kite Development Group",
-  // Path to the logo in the current directory
-  "logo": "logo.png",
-  "app": {
-    // When app has multiple exposed ports, specify which one people should see
-    "webPort": 8000
-  }
-}
-{% endhighlight %}
+To read more about kite.json, please click [here](/docs/kite-json-file).
 
-### Created Image
-
-![Created Image](/img/kite-json-file/created-image.png)
-
-### Created App
-
-![Created App](/img/kite-json-file/created-app.png)
+For an example of how to build your own image, check out
+this example on [Github](https://github.com/usekite/html).
