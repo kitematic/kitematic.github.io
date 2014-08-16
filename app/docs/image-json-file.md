@@ -1,15 +1,15 @@
 ---
 layout: docs
-title: Kite JSON File
-permalink: /kite-json-file/
+title: Image JSON File
+permalink: /image-json-file/
 published: true
 ---
 
-## Kite JSON File
+## Image JSON File
 
 ---
 
-The Kite JSON file (kite.json) is similar to package.json for NPM. It describes
+The image JSON file (image.json) is similar to package.json for NPM. It describes
 meta data for different Docker images, such as the image name, version,
 description and logo.
 
@@ -20,7 +20,7 @@ description and logo.
   "name": "html",
   "version": "0.1.0",
   "description": "A HTML app powered by Nginx.",
-  "author": "Kite Development Group",
+  "author": "Kitematic",
   // Path to the logo in the current directory
   "logo": "logo.png",
   "app": {
@@ -32,8 +32,8 @@ description and logo.
 
 ### Created Image
 
-![Created Image](/img/kite-json-file/created-image.png)
+![Created Image](/img/image-json-file/created-image.png)
 
 ### Created App
 
-![Created App](/img/kite-json-file/created-app.png)
+![Created App](/img/image-json-file/created-app.png)
