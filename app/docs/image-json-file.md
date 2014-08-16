@@ -20,7 +20,7 @@ description and logo.
   "name": "html",
   "version": "0.1.0",
   "description": "A HTML app powered by Nginx.",
-  "author": "Kite Development Group",
+  "author": "Kitematic",
   // Path to the logo in the current directory
   "logo": "logo.png",
   "app": {
