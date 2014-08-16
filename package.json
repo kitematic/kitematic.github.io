@@ -1,8 +1,8 @@
 {
-  "name": "temp2",
+  "name": "kitematic",
   "private": true,
   "version": "0.0.0",
-  "description": "Yeoman workflow for temp2",
+  "description": "Yeoman workflow for Kitematic",
   "dependencies": {},
   "devDependencies": {
     "grunt": "~0.4.4",
