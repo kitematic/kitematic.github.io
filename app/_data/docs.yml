@@ -12,8 +12,8 @@
 - title: Images
   docs:
   - build-your-own-image
-  - kite-json-file
+  - image-json-file
 
 - title: Contributing
   docs:
-  - setup-kite-for-development
+  - setup-kitematic-for-development

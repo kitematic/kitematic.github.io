@@ -9,13 +9,13 @@ published: true
 
 ---
 
-### Download & Install Kite
+### Download & Install Kitematic
 
-Download the Kite Mac App and double-click to install it.
+Download the Kitematic Mac App and double-click to install it.
 
 ### Create Application
 
-After Kite is installed, you'll see the screen below. Click on the **Create App**
+After Kitematic is installed, you'll see the screen below. Click on the **Create App**
 button to start creating an application.
 
 ![Empty Apps](/img/get-started/empty-apps.png)
@@ -31,7 +31,7 @@ button to start creating an image.
 
 To create an image, simply pick any folder on your computer with a Dockerfile
 in it to start the Docker build process. If you don't have a folder right now
-with Dockerfile right now, you can download an example HTML app [here](https://github.com/usekite/html/archive/master.zip).
+with Dockerfile right now, you can download an example HTML app [here](https://github.com/kitematic/html/archive/master.zip).
 
 ![Pick Image Folder](/img/get-started/pick-image-folder.png)
 

@@ -1,7 +1,7 @@
 Landing Page
 =======
 
-This Jekyll project is the landing page for usekite.com and includes:
+This Jekyll project is the landing page for kitematic.com and includes:
 * Marketing Information
 * Blog
 * About, Team, Contact pages.

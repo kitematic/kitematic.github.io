@@ -4,10 +4,10 @@
 # 3. config.yml
 
 name: landing
-description: Landing page for usekite.com.
+description: Landing page for kitematic.com.
 author:
-  name: Kite
-  email: contact@usekite.com
+  name: Kitematic
+  email: contact@kitematic.com
 
 # Grunt handles images and assets.
 exclude: ['img', 'css', 'js', 'fonts',
