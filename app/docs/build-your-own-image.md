@@ -56,10 +56,10 @@ html/
 ├── logo.png            # Logo of the image
 ├── start.sh            # Script on how to start the app
 └── volumes/            # What to put in the volumes
-     ├── code/
-     └── etc/
-          └── nginx/
-               └── sites-available／
+    ├── code/
+    └── etc/
+        └── nginx/
+            └── sites-available／
 ```
 
 **Anything in the volumes folder will automatically added to the Docker volumes
