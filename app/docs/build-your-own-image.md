@@ -65,7 +65,5 @@ html/
 **Anything in the volumes folder will automatically added to the Docker volumes
 when an app is created from this image. **
 
-To read more about image.json, please click [here](/docs/image-json-file).
-
 For an example of how to build your own image, check out
 this example on [Github](https://github.com/kitematic/html).
