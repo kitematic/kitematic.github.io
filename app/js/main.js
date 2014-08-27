@@ -1,19 +1,21 @@
 /*global $:false */
 
 var adjustDocLayout = function () {
-  var windowWidth = $(window).width();
-  if (windowWidth > 780) {
-    var contentsHeight = $('.doc-contents').height();
-    var articleHeight = $('.doc-article').height();
-    if (contentsHeight > articleHeight) {
-      $('.doc-article').height(contentsHeight - 20);
+  imagesLoaded('.doc-article', function () {
+    var windowWidth = $(window).width();
+    if (windowWidth > 780) {
+      var contentsHeight = $('.doc-contents').height();
+      var articleHeight = $('.doc-article').height();
+      if (contentsHeight > articleHeight) {
+        $('.doc-article').height(contentsHeight - 20);
+      } else {
+        $('.doc-contents').height(articleHeight + 20);
+      }
     } else {
-      $('.doc-contents').height(articleHeight + 20);
+      $('.doc-contents').css({'height': '100%'});
+      $('.doc-article').css({'height': '100%'});
     }
-  } else {
-    $('.doc-contents').css({'height': '100%'});
-    $('.doc-article').css({'height': '100%'});
-  }
+  });
 };
 
 $(document).ready(function () {
