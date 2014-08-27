@@ -6,12 +6,13 @@
   docs:
   - environment-variables
   - check-app-logs
-  - ssh-into-apps
+  - terminal-into-apps
   - restart-apps
 
 - title: Images
   docs:
   - build-your-own-image
+  - image-json-file
 
 - title: Contributing
   docs:
