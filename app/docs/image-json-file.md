@@ -19,13 +19,13 @@ description and logo.
 {
   "name": "html",
   "version": "0.1.0",
-  "description": "A HTML app powered by Nginx.",
-  "author": "Kitematic",
+  "description": "A basic HTML app powered by nginx.",
+  "author": "Kitematic Inc.",
   // Path to the logo in the current directory
   "logo": "logo.png",
   "app": {
     // When app has multiple exposed ports, specify which one people should see
-    "webPort": 8000
+    "webPort": 80
   }
 }
 {% endhighlight %}

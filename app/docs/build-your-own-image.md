@@ -18,26 +18,27 @@ Here's an example Dockerfile for creating a basic HTML app powered by Nginx:
 
 {% highlight bash %}
 # Pull from a base image
-FROM ubuntu:14.04
+FROM dockerfile/ubuntu
 
 # Install minimal set of system packages required to run your app
-RUN \
-  apt-get update && \
-  apt-get install -y -q software-properties-common python-software-properties && \
-  apt-get install -y -q curl git make wget nginx sudo
+# We install nginx for this app
+RUN apt-get update
+RUN apt-get install -y nginx
 
-# Add script to start Nginx
-ADD ./start.sh /start.sh
-RUN chmod 755 /start.sh
+# Update nginx configurations
+RUN echo "\ndaemon off;" >> /etc/nginx/nginx.conf
 
-# Mount volumes for HTML code and Nginx configuration
-VOLUME ["/code", "/etc/nginx/sites-available"]
+# Add nginx configuration for the app
+ADD /config/default /etc/nginx/sites-available/
+
+# Mount volumes for HTML code
+VOLUME ["/code"]
 
 # Expose port the app is running on
-EXPOSE 8000
+EXPOSE 80
 
-# Run start command by default
-CMD ["/bin/bash", "/start.sh"]
+# Run nginx command
+CMD ["nginx"]
 {% endhighlight %}
 
 Note that Kitematic did not use the Dockerfile `ADD` instruction to put HTML code and
@@ -54,12 +55,10 @@ html/
 ├── Dockerfile          # Dockerfile for building the image
 ├── image.json          # Meta data for the image
 ├── logo.png            # Logo of the image
-├── start.sh            # Script on how to start the app
+├── config/
+|   └── default         # Nginx configuration
 └── volumes/            # What to put in the volumes
-    ├── code/
-    └── etc/
-        └── nginx/
-            └── sites-available／
+    └── code/           # Code for your HTML app
 ```
 
 **Anything in the volumes folder will automatically added to the Docker volumes
@@ -67,3 +66,6 @@ when an app is created from this image. **
 
 For an example of how to build your own image, check out
 this example on [Github](https://github.com/kitematic/html).
+
+To learn more about image.json file, check out
+the tutorial [here](/docs/image-json-file).
