@@ -30,8 +30,9 @@ button to start creating an image.
 ### Create Image
 
 To create an image, simply pick any folder on your computer with a Dockerfile
-in it to start the Docker build process. If you don't have a folder right now
-with Dockerfile right now, you can download an example HTML app [here](https://github.com/kitematic/html/archive/master.zip).
+in it to start the Docker build process.
+
+**Note:** If you don't have a folder right now with Dockerfile right now, you can download an example HTML app dockerfile [here](https://github.com/kitematic/html/archive/master.zip).
 
 ![Pick Image Folder](/img/get-started/pick-image-folder.png)
 
