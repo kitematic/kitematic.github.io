@@ -60,7 +60,13 @@ You can have some fun with the Redis CLI inside your Redis container.
 
 ![Redis Cli](/img/examples/redis-cli.png)
 
-Have fun!
+### Persistent Data
+
+You can run the command **save** inside the Redis CLI to dump the data into the volume.
+
+![Open Finder](/img/examples/open-finder.png)
+
+![Data Volume](/img/examples/data-volume.png)
 
 Links for the code for **node-example** and **redis** images:
 
