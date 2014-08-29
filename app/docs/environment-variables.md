@@ -1,7 +1,7 @@
 ---
 layout: docs
 title: Environment Variables
-permalink: /environment-variables/
+permalink: /docs/environment-variables/
 published: true
 ---
 

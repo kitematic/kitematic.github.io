@@ -1,7 +1,7 @@
 ---
 layout: docs
 title: Check App Logs
-permalink: /check-app-logs/
+permalink: /docs/check-app-logs/
 published: true
 ---
 

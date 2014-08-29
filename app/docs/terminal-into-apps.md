@@ -1,7 +1,7 @@
 ---
 layout: docs
 title: Terminal Into Apps
-permalink: /terminal-into-apps/
+permalink: /docs/terminal-into-apps/
 published: true
 ---
 

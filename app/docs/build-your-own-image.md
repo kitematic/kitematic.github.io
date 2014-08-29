@@ -1,7 +1,7 @@
 ---
 layout: docs
 title: Build Your Own Image
-permalink: /build-your-own-image/
+permalink: /docs/build-your-own-image/
 published: true
 ---
 
@@ -50,7 +50,7 @@ But what about putting in default or template code now? Because mounted volumes
 will be empty. Don't worry, Kitematic can take care of that. Here's what a Docker
 image folder looks like.
 
-```
+{% highlight bash %}
 html/
 ├── Dockerfile          # Dockerfile for building the image
 ├── image.json          # Meta data for the image
@@ -59,10 +59,11 @@ html/
 |   └── default         # Nginx configuration
 └── volumes/            # What to put in the volumes
     └── code/           # Code for your HTML app
-```
+{% endhighlight %}
+
 
 **Anything in the volumes folder will automatically added to the Docker volumes
-when an app is created from this image. **
+when an app is created from this image.**
 
 For an example of how to build your own image, check out
 this example on [Github](https://github.com/kitematic/html).

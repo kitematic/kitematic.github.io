@@ -1,7 +1,7 @@
 ---
 layout: docs
 title: Restart Apps
-permalink: /restart-apps/
+permalink: /docs/restart-apps/
 published: true
 ---
 

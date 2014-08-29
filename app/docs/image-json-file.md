@@ -1,7 +1,7 @@
 ---
 layout: docs
 title: Image JSON File
-permalink: /image-json-file/
+permalink: /docs/image-json-file/
 published: true
 ---
 

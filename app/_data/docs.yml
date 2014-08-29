@@ -1,6 +1,8 @@
 - title: Introduction
   docs:
   - index
+  - examples
+  - download-images
 
 - title: Apps
   docs:
@@ -13,7 +15,3 @@
   docs:
   - build-your-own-image
   - image-json-file
-
-- title: Contributing
-  docs:
-  - setup-for-development

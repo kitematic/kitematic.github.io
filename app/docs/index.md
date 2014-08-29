@@ -1,7 +1,7 @@
 ---
 layout: docs
 title: Getting Started
-permalink: /
+permalink: /docs/
 published: true
 ---
 
@@ -11,7 +11,7 @@ published: true
 
 ### Download & Install Kitematic
 
-Download the Kitematic Mac App and double-click to install it.
+Download the Kitematic Mac App, unzip and double-click to install it.
 
 ### Create Application
 
