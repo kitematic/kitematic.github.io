@@ -9,6 +9,10 @@ published: true
 
 ---
 
+[[object Object] Error During Install](/docs/known-issue-fixes#object-object-error-during-install)
+
+[Can't View Any Apps](/docs/known-issue-fixes#cant-view-any-apps)
+
 ### [object Object] Error During Install
 
 ![Object Error 1](/img/known-issue-fixes/object-error-1.png)
