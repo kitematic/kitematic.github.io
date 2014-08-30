@@ -15,3 +15,7 @@
   docs:
   - build-your-own-image
   - image-json-file
+
+- title: Troubleshooting
+  docs:
+  - known-issue-fixes
