@@ -1,5 +1,12 @@
 <div class="col-sm-3">
   <aside class="doc-contents">
+    <div class="row">
+      <div class="col-sm-12">
+        <form style="padding: 10px;">
+          <input type="text" id="st-search-input" class="st-search-input docs" />
+        </form>
+      </div>
+    </div>
     {% for section in site.data.docs %}
     <h4>{{ section.title }}</h4>
     {% include docs_ul.html items=section.docs %}
