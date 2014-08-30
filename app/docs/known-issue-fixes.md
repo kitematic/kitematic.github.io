@@ -26,4 +26,13 @@ You can follow the steps below to fix this problem.
 6. Right-click on **boot2docker-vm -> Remove...** to remove the VM
 7. Run the Kitematic installer again should now fix the problem by installing a newer version of boot2docker
 
+### Can't View Any Apps
+
+Try running the following commands in your terminal.
+
+{% highlight bash %}
+sudo mkdir -p /etc/resolver
+sudo echo "nameserver 172.17.42.1" > /etc/resolver/dev
+{% endhighlight %}
+
 Let us know if there are more issues at contact@kitematic.com or hop in our [support chat](https://www.hipchat.com/giAT9Fqb5).
