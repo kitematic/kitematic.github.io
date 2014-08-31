@@ -23,3 +23,8 @@ pygments: true
 
 paginate: 5
 paginate_path: "blog/page:num"
+
+site_url: "https://kitematic.com"
+
+gems:
+  - jekyll-sitemap
