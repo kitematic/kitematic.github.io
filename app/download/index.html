@@ -29,8 +29,8 @@ title: Download Kitematic
   </div>
   <script>
     $(document).ready(function () {
+      ga('send', 'event', 'download', 'click');  // value is a number.
       setTimeout(function () {
-        ga('send', 'event', 'download', 'click');  // value is a number.
         window.location = 'https://s3.amazonaws.com/kite-installer/Kitematic.zip';
       }, 2000);
     });
