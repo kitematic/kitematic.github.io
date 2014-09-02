@@ -35,7 +35,7 @@ environment variables to the node.js app so that it knows which Redis database i
 listen to.
 
 To edit the environment variables, click on the **gear** icon of the node.js app to go to its
-settings page. In the "Config Variables" section, add the following: **REDIS_HOST** to **redis.dev** (your-redis-appname.dev),
+settings page. In the "Config Variables" section, add the following: **REDIS_HOST** to **redis.kite** (your-redis-appname.kite),
 and **REDIS_PORT** to **6379** (official Redis port).
 
 ![Environment Variables](/img/examples/environment-variables.png)
@@ -50,7 +50,7 @@ You can have some fun using it.
 ![Todo Filled](/img/examples/todo-filled.png)
 
 You can also try to switching the node.js app to use another Redis database by creating a new Redis app from the built Redis image with a different name.
-Then you can set the node.js app's **REDIS_HOST** to **your-new-appname.dev**
+Then you can set the node.js app's **REDIS_HOST** to **your-new-appname.kite**
 
 ### Fun With Terminal
 
