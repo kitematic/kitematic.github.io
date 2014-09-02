@@ -36,7 +36,7 @@ Try running the following commands in your terminal.
 
 {% highlight bash %}
 sudo mkdir -p /etc/resolver
-sudo bash -c 'echo "nameserver 172.17.42.1" > /etc/resolver/dev'
+sudo bash -c 'echo "nameserver 172.17.42.1" > /etc/resolver/kite'
 {% endhighlight %}
 
 Let us know if there are more issues at contact@kitematic.com or hop in our [support chat](https://www.hipchat.com/giAT9Fqb5).
