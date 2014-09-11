@@ -19,23 +19,7 @@ var adjustDocLayout = function () {
 };
 
 $(document).ready(function () {
-  var downloadURL = 'https://s3.amazonaws.com/kite-installer/Kitematic-0.2.0.zip';
   adjustDocLayout();
-  $('.nav-download-form').on('submit', function (event) {
-    console.log('click');
-    ga('send', 'event', 'download', 'click');  // value is a number.
-    window.location = downloadURL;
-    event.preventDefault();
-    return false;
-  });
-
-  $('.splash-download-button').on('click', function (event) {
-    console.log('splash click');
-    ga('send', 'event', 'download', 'click');  // value is a number.
-    window.location = downloadURL;
-    event.preventDefault();
-    return false;
-  });
 });
 
 $(window).resize(function() {
