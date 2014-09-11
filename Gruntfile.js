@@ -353,7 +353,7 @@ module.exports = function (grunt) {
     'clean:server',
     'jekyll:check',
     'less:server',
-    'jshint:all',
+    // 'jshint:all',
     'csslint:check'
   ]);
 
