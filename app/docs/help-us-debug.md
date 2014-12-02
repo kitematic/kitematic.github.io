@@ -9,13 +9,11 @@ published: true
 
 ---
 
-You can start Kitematic with console logs with the following steps:
+You can start Kitematic from the command-line via the following steps:
 
 {% highlight bash %}
 cd <dir with Kitematic.app>
-./Kitematic.app/Contents/MacOS/Atom
+./Kitematic.app/Contents/MacOS/Kitematic
 {% endhighlight %}
 
-If you find any issues with Kitematic, you can send us the console logs to really help us speed up the fixes.
-
-Feel free to hop in our [support chat](https://www.hipchat.com/giAT9Fqb5) to tell us more about the issues as well.
+If possible please attach logs to any issues reported on GitHub.

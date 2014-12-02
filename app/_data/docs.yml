@@ -1,22 +1,20 @@
 - title: Introduction
   docs:
   - index
-  - examples
-  - download-images
+  - building-an-image
+  - creating-a-container
+  - modifying-container-data
+  - example-images
 
-- title: Apps
+- title: Managing Containers
   docs:
   - environment-variables
-  - check-app-logs
-  - terminal-into-apps
-  - restart-apps
-
-- title: Images
-  docs:
-  - build-your-own-image
-  - image-json-file
+  - container-logs
+  - shell-access
+  - restarting-containers
 
 - title: Troubleshooting
   docs:
-  - known-issue-fixes
+  - upgrading-kitematic
+  - reporting-bugs
   - help-us-debug

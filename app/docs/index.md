@@ -1,61 +1,32 @@
 ---
 layout: docs
-title: Getting Started
+title: Installation
 permalink: /docs/
 published: true
 ---
 
-## Getting Started
+## Install Kitematic
 
 ---
 
-### Download & Install Kitematic
+### Download Kitematic
 
-Download the Kitematic Mac App, unzip and double-click to install it.
+[Download Kitematic](/download), unzip it and double-click the application to run it.
 
-### Create Application
+### Initial Setup
 
-After Kitematic is installed, you'll see the screen below. Click on the **Create App**
-button to start creating an application.
+Opening Kitematic for the first time will take a bit longer than usual. If required, Kitematic will download and install VirtualBox. Older versions of VirtualBox will be updated.
 
-![Empty Apps](/img/get-started/empty-apps.png)
+![Empty Apps](/img/get-started/virtualbox.png)
 
-Once you click the button, you'll see the create app dialog. You can now give your app a name and
-pick the type of app from a list of images. If you are just starting, there'll
-be no images and you'll have to create one first. Click on the green **Create Image**
-button to start creating an image.
+Kitematic will then set up a Linux VM in which to build images and run Docker containers.
 
-![Create App](/img/get-started/create-app.png)
+![Empty Apps](/img/get-started/starting-docker-vm.png)
 
-### Create Image
+Once the setup's done you should be greeted with a blank images screen:
 
-To create an image, simply pick any folder on your computer with a Dockerfile
-in it to start the Docker build process.
+![Empty Apps](/img/get-started/empty-images.png)
 
-**Note:** If you don't have a folder with Dockerfile right now, you can download an example HTML app dockerfile [here](https://github.com/kitematic/html/archive/master.zip).
+### Next Steps
 
-![Pick Image Folder](/img/get-started/pick-image-folder.png)
-
-Building the image might take a couple minutes, because Docker need to pull the
-base images such as Ubuntu required to build the image. After the image is built,
-you can click on the **plus** icon to create an app from this image.
-
-![HTML Image](/img/get-started/html-image.png)
-
-### View Application
-
-After your app is created, you can click on the **view** icon to view the app
-running on your computer.
-
-![HTML App](/img/get-started/html-app.png)
-
-### Edit Code
-
-To edit the code for this app, you can click on the **folder** icon to go to where
-the app stores its code.
-
-![HTML App Folder](/img/get-started/html-app-folder.png)
-
-![Finder](/img/get-started/finder.png)
-
-Edit the **index.html** file and view the app again to see the changes.
+You're now ready to [create your first image](/docs/building-an-image/).

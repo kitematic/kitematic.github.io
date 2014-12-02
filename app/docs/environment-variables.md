@@ -9,10 +9,10 @@ published: true
 
 ---
 
-Click on the **gear** icon on the apps page to go to the app settings.
+Click on the **gear** icon on the containers pane. This opens up advanced settings for the container.
 
-![App Settings](/img/environment-variables/app-settings.png)
+![App Settings](/img/environment-variables/container-settings.png)
+
+Environment variables can then be directly viewed and modified:
 
 ![Environment Variables](/img/environment-variables/environment-variables.png)
-
-Here you can change environment variables for your app.

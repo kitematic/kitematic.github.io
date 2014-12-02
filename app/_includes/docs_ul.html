@@ -17,7 +17,7 @@
 
   {% for p in site.pages %}
     {% if p.url == item_url %}
-     <a href="{{ site.url }}{{ p.url }}"><li class="{{ c }}">{{ p.title }}</li></a>
+     <a href="{{ p.url }}"><li class="{{ c }}">{{ p.title }}</li></a>
     {% endif %}
   {% endfor %}
 {% endfor %}
