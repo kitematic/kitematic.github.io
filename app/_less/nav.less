@@ -16,9 +16,12 @@
 
     .navbar-collapse {
       border: none;
-      position: absolute;
       width: 100%;
       z-index: 10;
+
+      &.in, &.collapsing {
+        position: absolute;
+      }
     }
 
     .navbar-toggle {
