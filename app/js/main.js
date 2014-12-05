@@ -20,6 +20,14 @@ var adjustDocLayout = function () {
 
 $(document).ready(function () {
   adjustDocLayout();
+
+  $('.navbar-toggle').on('click', function (e) {
+    if ($('.navbar-collapse').hasClass('in')) {
+      $('.hero').removeClass('menuHide');
+    } else if (!$('.navbar-collapse').hasClass('collapsing')) {
+      $('.hero').addClass('menuHide');
+    }
+  });
 });
 
 $(window).resize(function() {

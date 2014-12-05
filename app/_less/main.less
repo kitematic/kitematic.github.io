@@ -181,6 +181,14 @@
   }
 
   .hero {
+    -webkit-transition: opacity 0.2s linear;
+    -moz-transition: opacity 0.2s linear;
+    -o-transition: opacity 0.2s linear;
+    -ms-transition: opacity 0.2s linear;
+    transition: opacity 0.2s linear;
+    &.menuHide {
+      opacity: 0;
+    }
     margin-top: 100px;
     /*h1 {
       color: white;
