@@ -10,8 +10,19 @@
 
   .navbar {
 
+    li.twitter-follow-button {
+      padding: 16px 15px 14px;
+    }
+
+    .navbar-header {
+    }
+
     .navbar-collapse {
       border: none;
+      position: absolute;
+      width: 100%;
+      z-index: 10;
+      background: rgba(0, 0, 0, 0.90);
     }
 
     .navbar-toggle {
@@ -115,6 +126,9 @@
       border: none;
       a {
         color: rgba(255, 255, 255, 0.8);
+        &:focus {
+          background: none;
+        }
         &:hover {
           color: white;
         }
