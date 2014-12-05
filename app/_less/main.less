@@ -10,7 +10,7 @@
 @keyframes screenshot-fadein {
   from {
     opacity: 0;
-    bottom: -100px;
+    bottom: -300px;
   }
   to {
     opacity: 1;
@@ -65,7 +65,7 @@
     bottom: 0px;
     z-index: 3;
 
-    animation: screenshot-fadein 0.4s;
+    animation: screenshot-fadein 0.8s;
     img {
       @media (max-width: @screen-xs-max) {
         display: block;
@@ -181,7 +181,7 @@
   }
 
   .hero {
-    margin-top: 60px;
+    margin-top: 100px;
     /*h1 {
       color: white;
       font-size: 54px;
@@ -477,73 +477,6 @@
       height: 240px;
       padding-left: 0;
     }
-  }
-
-  /* By default, we tilt all our images -2 degrees */
-  ul.polaroids a {
-    -webkit-transform: rotate(-2deg);
-    -moz-transform: rotate(-2deg);
-
-    background: #fff;
-    margin: 0 0 27px 30px;
-    padding: 10px 10px 10px;
-    text-align: center;
-    text-decoration: none;
-    box-shadow: 0 3px 6px rgba(0,0,0,.20);
-    -webkit-transform: rotate(-10deg);
-    -webkit-transition: -webkit-transform .15s linear;
-    position: absolute;
-    z-index: 1;
-  }
-
-  ul.polaroids .polaroid-wrapper {
-    max-height: 310px;
-    @media (max-width: @screen-xs-max) {
-      max-height: 200px;
-    }
-
-    overflow: hidden;
-  }
-
-  ul.polaroids img.picture {
-    display: block;
-    margin-bottom: 12px;
-    width: 280px;
-    @media (max-width: @screen-xs-max) {
-      width: 180px;
-    }
-  }
-
-  /* Scale the images on hover, add transitions for smoothing things out, and ensure the hover appears on top */
-  ul.polaroids:hover a {
-    -webkit-transform: scale(1.10) rotate(-15deg);
-    -moz-transform: scale(1.10) rotate(-15deg);
-  }
-
-  /* Rotate all even images 2 degrees */
-  ul.polaroids li:nth-child(even) a {
-    -webkit-transform: translate(10px, 15px) rotate(-5deg);
-    -moz-transform: translate(10px, 15px) rotate(-5deg);
-    z-index: 2;
-  }
-
-  /* Scale the images on hover, add transitions for smoothing things out, and ensure the hover appears on top */
-  ul.polaroids:hover li:nth-child(even) a {
-    -webkit-transform: translate(10px, 15px) rotate(0deg) scale(1.10);
-    -moz-transform: translate(10px, 15px) rotate(0deg) scale(1.10);
-  }
-
-  /* Don't rotate every third image, but offset its position */
-  ul.polaroids li:nth-child(3n) a {
-    -webkit-transform: translate(20px, 25px) rotate(5deg) scale(1.10);
-    -moz-transform: translate(20px, 25px) rotate(5deg) scale(1.10);
-    z-index: 3;
-  }
-
-  /* Don't rotate every third image, but offset its position */
-  ul.polaroids:hover li:nth-child(3n) a {
-    -webkit-transform: translate(20px, 25px) rotate(10deg) scale(1.10);
-    -moz-transform: translate(20px, 25px) rotate(10deg) scale(1.10);
   }
 }
 
