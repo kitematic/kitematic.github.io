@@ -1,0 +1,6 @@
+[
+  'wordpress',
+  'redis',
+  'mysql',
+  'dockerfile/ghost'
+]
