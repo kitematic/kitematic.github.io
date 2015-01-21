@@ -1,8 +1,11 @@
 {
   "recommended": [
+    "jenkins",
+    "atlassian/stash",
     "wordpress",
     "redis",
     "mysql",
-    "dockerfile/ghost"
+    "dockerfile/ghost",
+    "mchiang/minecraft"
   ]
 }
