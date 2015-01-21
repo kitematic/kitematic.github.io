@@ -1,6 +1,8 @@
-[
-  'wordpress',
-  'redis',
-  'mysql',
-  'dockerfile/ghost'
-]
+{
+  "recommended": [
+    "wordpress",
+    "redis",
+    "mysql",
+    "dockerfile/ghost"
+  ]
+}
