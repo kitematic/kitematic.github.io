@@ -3,7 +3,7 @@
     "kitematic/html",
     "kitematic/ghost",
     "jenkins",
-    "atlassian/stash",
+    "redis",
     "rethinkdb",
     "kitematic/minecraft"
   ]
