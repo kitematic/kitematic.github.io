@@ -1,11 +1,10 @@
 {
   "recommended": [
+    "kitematic/html",
+    "kitematic/ghost",
     "jenkins",
     "atlassian/stash",
-    "wordpress",
-    "redis",
-    "mysql",
-    "dockerfile/ghost",
-    "mchiang/minecraft"
+    "rethinkdb",
+    "kitematic/minecraft"
   ]
 }
