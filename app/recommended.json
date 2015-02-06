@@ -28,8 +28,8 @@
     },
     {
       "repo": "redis",
-      "gradient_start": "#000",
-      "gradient_end": "#FFF",
+      "gradient_start": "#DA2D1D",
+      "gradient_end": "#A61F1C",
       "img": "redis.png"
     },
     {
