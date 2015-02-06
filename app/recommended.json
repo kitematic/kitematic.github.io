@@ -34,8 +34,8 @@
     },
     {
       "repo": "rethinkdb",
-      "gradient_start": "#000",
-      "gradient_end": "#FFF",
+      "gradient_start": "#1E3F4C",
+      "gradient_end": "#183B47",
       "img": "rethinkdb.png"
     },
     {
