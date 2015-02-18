@@ -24,7 +24,7 @@
   }
 
   max-height: 1100px;
-  color: #777;
+  color: #243237;
 
   font-weight: 500;
   font-size: 16px;
@@ -32,8 +32,10 @@
   .newsletter {
     position: relative;
     z-index: 5;
-    border-top: 1px solid #dedede;
-    padding-bottom: 20px;
+    background-color: #FCFEFE;
+    border-top: 1px solid #DCE2E2;
+    border-bottom: 1px solid #DCE2E2;
+    padding: 10px 0px 20px 0px;
   }
 
   .header {
@@ -105,11 +107,15 @@
 
   .signup-form {
     margin: 0 auto;
+    button {
+      padding: 0.6em 1em;
+      font-size: 16px;
+    }
     input {
-      padding: 0.5em 1em 0.5em 0.7em;
+      padding: 0.5em 1em 0.6em 1em;
       border: none;
       border: 1px solid lighten(#A7B7C5, 10%);
-      border-radius: 4px;
+      border-radius: 40px;
 
       &:focus {
         box-shadow: none;
@@ -117,6 +123,9 @@
 
       &:active {
         box-shadow: none;
+      }
+      &::-webkit-input-placeholder {
+        color: #DDD;
       }
     }
   }
@@ -259,8 +268,12 @@
   }
 
   section.features {
-    border-top: 1px solid #E0E0E0;
     background: white;
+    h3 {
+      text-align: center;
+      font-weight: 300;
+      margin-bottom: 50px;
+    }
     .feature {
       margin-bottom: 40px;
       .desc {
