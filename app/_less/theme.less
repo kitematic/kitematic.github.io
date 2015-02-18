@@ -9,7 +9,7 @@
 html, body {
   font-family: "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
   height: 100%;
-  background: #F1F4F6;
+  background: white;
 }
 
 .container {
@@ -57,7 +57,7 @@ html, body {
 @brand-success:         #5cb85c;
 @brand-info:            #5bc0de;
 @brand-warning:         #f0ad4e;
-@brand-danger:          #FF5C70;
+@brand-danger:          #F47A45;
 
 @padding-base-vertical:     6px;
 @padding-base-horizontal:   18px;
@@ -140,7 +140,8 @@ html, body {
   }
 
   border: none;
-  border-radius: 3px;
+  border-radius: 40px;
+  transition: all 0.25s;
 }
 
 // Common styles
@@ -181,6 +182,9 @@ html, body {
   }
 }
 
+.btn-lg {
+  padding: 12px 20px;
+}
 
 //
 // Images

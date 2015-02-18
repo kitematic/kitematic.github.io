@@ -2,16 +2,26 @@
 
 .kite-nav {
   .navbar-logo {
-    width: 140px;
+    width: 221px;
     height: 22px;
 
-    .at2x('/img/navbar_brand.png', 140px, 22px);
+    .at2x('/img/navbar_brand.png', 221px, 22px);
   }
 
   .navbar {
 
     li.twitter-follow-button {
       padding: 16px 15px 14px;
+    }
+
+    button {
+      border-radius: 40px;
+    }
+
+    .link {
+      position: relative;
+      top: -2px;
+      left: -8px;
     }
 
     .navbar-collapse {
@@ -106,10 +116,10 @@
 
   &.faded {
     .navbar-logo {
-      .at2x('/img/navbar_brand_faded.png', 140px, 22px);
+      .at2x('/img/navbar_brand_white.png', 221px, 22px);
 
       &:hover {
-        .at2x('/img/navbar_brand_white.png', 140px, 22px);
+        .at2x('/img/navbar_brand_white.png', 221px, 22px);
       }
     }
     .navbar {
