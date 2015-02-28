@@ -1,20 +1,7 @@
 - title: Introduction
   docs:
   - index
-  - building-an-image
-  - creating-a-container
-  - modifying-container-data
-  - example-images
-
-- title: Managing Containers
+- title: User Manual
   docs:
-  - environment-variables
-  - container-logs
-  - shell-access
-  - restarting-containers
-
-- title: Troubleshooting
-  docs:
-  - upgrading-kitematic
-  - reporting-bugs
-  - help-us-debug
+  - managing-volumes
+  - using-docker-cli
