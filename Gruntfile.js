@@ -280,7 +280,7 @@ module.exports = function (grunt) {
     buildcontrol: {
       dist: {
         options: {
-          remote: 'git@github.com:kitematic/test.git',
+          remote: 'git@github.com:kitematic/kitematic.github.git',
           branch: 'master',
           commit: true,
           push: true
