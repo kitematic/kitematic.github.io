@@ -1,0 +1,6 @@
+auth_token: iGDXTlvw/HfRZK5U0Qdf
+tunnels:
+  kitematic:
+    proto:
+      https: "9000"
+    auth: kitematic:km4theTeam!
