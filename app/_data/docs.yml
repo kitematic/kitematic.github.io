@@ -5,3 +5,6 @@
   docs:
   - managing-volumes
   - using-docker-cli
+- title: Tutorials
+  docs:
+  - minecraft-server
