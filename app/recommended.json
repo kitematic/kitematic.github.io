@@ -9,7 +9,7 @@
   ],
   "repos": [
     {
-      "repo": "kitematic/html",
+      "repo": "kitematic/hello-world-nginx",
       "gradient_start": "#24B8EB",
       "gradient_end": "#218CF4",
       "img": "kitematic_html.png"
