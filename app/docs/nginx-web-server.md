@@ -1,11 +1,11 @@
 ---
 layout: docs
-title: Serving a Static Website
-permalink: /docs/static-website/
+title: Nginx Web Server
+permalink: /docs/nginx-web-server/
 published: true
 ---
 
-## Serving a Static Website
+## Serving a Static Website with Nginx
 
 ---
 
