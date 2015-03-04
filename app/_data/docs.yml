@@ -1,6 +1,9 @@
 - title: Introduction
   docs:
   - index
+- title: Tutorials
+  docs:
+  - static-website
 - title: User Manual
   docs:
   - managing-volumes
