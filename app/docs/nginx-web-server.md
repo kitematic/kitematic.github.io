@@ -15,7 +15,7 @@ In this tutorial, you will:
 - Explore the container's website data natively on your Mac
 - Use volumes to modify the website data
 
-As an example website we'll be serving the popular 2048 game, as shown below. Let's get to it!
+In this example website we'll be serving the popular 2048 game, as shown below. Let's get to it!
 
 ![screen shot 2015-03-03 at 5 01 41 pm](https://cloud.githubusercontent.com/assets/251292/6473377/f91c581e-c1c6-11e4-945e-fd9d7bf65070.png)
 
@@ -35,11 +35,11 @@ Once it's done downloading you should see a quick preview of the example website
 
 ![screen shot 2015-03-03 at 5 43 47 pm](https://cloud.githubusercontent.com/assets/251292/6474198/da638590-c1cc-11e4-9657-dd2e1527c25d.png)
 
-**What just happened?** Kitematic downloaded the `kitematic/hello-world-nginx` image from the Docker Hub and then ran this image, creating an Nginx container that serves website data.
+**What just happened?** Kitematic downloaded the `kitematic/hello-world-nginx` image from the Docker Hub and then created and ran a Docker Nginx container from this image.
 
 #### Viewing the Website Data in Finder
 
-This container exposes website data via a _Docker volume_. Kitematic makes managing Docker volumes easy - you can edit the data in Finder or with your favorite text editor. By default, Kitematic places volumes under `~/Kitematic` but you can change this in the container settings. To access the files via finder, click on the in-app folder icon for your container:
+This container exposes website data via a _Docker volume_. Kitematic makes managing Docker volumes easy - you can edit the data in Finder or with your favorite text editor. By default, Kitematic places volumes under `~/Kitematic` but you can change this in the container settings. To access the files via finder, click on the in-app folder icon for a container:
 
 ![screen shot 2015-03-03 at 5 45 03 pm](https://cloud.githubusercontent.com/assets/251292/6474222/0d8e6f2a-c1cd-11e4-9fd1-8ea274c9596a.png)
 
