@@ -8,6 +8,16 @@
     .at2x('/img/navbar_brand.png', 228px, 22px);
   }
 
+  &.faded {
+    .navbar {
+      .navbar-collapse {
+        &.in, &.collapsing {
+          background-color: transparent;
+        }
+      }
+    }
+  }
+
   .navbar {
     li.twitter-follow-button {
       padding: 16px 15px 14px;
@@ -30,6 +40,8 @@
 
       &.in, &.collapsing {
         position: absolute;
+        padding-left: 20px;
+        background-color: white;
       }
     }
 
