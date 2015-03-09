@@ -9,7 +9,7 @@ published: true
 
 ---
 
-Want to play Minecraft with your friends? You’ll need to have a Minecraft server running, but it could be a hassle to set it up. Using Kitematic and Docker, getting a Minecraft server running can be point and click.
+This is a quick tutorial to set up a local minecraft server sing Kitematic and Docker.
 
 #### Create Minecraft Server Container
 
@@ -57,6 +57,6 @@ Restart your container by clicking the "Restart" button.
 
 ![screen_shot_2015-03-03_at_1_29_42_pm](https://cloud.githubusercontent.com/assets/559953/6472823/e06fbda0-c1a9-11e4-888a-2306a3cae37d.png)
 
-Go back to your Minecraft Client and rejoin your server. Done!
+Go back to your Minecraft Client and join your server. Done!
 
 ![screen shot 2015-03-03 at 1 30 14 pm](https://cloud.githubusercontent.com/assets/559953/6472828/e9140f24-c1a9-11e4-8005-7b3e6affd877.png)

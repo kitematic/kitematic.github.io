@@ -7,4 +7,6 @@
   - using-docker-cli
 - title: Tutorials
   docs:
+  - nginx-web-server
   - minecraft-server
+  - rethinkdb-dev-database
