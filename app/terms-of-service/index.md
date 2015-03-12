@@ -6,6 +6,8 @@ title: Terms of Service
 #### Docker Terms of Service
 
 Effective as of January 7, 2015
+
+{% highlight html %}
 1. Your Agreement with Docker
 
 1.1 Your use of the Docker Services are governed by this agreement (the "Terms"). "Docker, Inc." means Docker, Inc., located at 475 Brannan Street, Suite 310, San Francisco, CA 94104, United States, and its subsidiaries or affiliates involved in providing the Docker Services. The “Docker Services” means the services Docker, Inc. makes available through this website (including the Docker Hub website) and any other software or services offered by Docker, Inc. Your use of the Docker open-source application container engine, including without limitation the Kitematic application (collectively, "Docker") is likewise governed by the Terms as described in more detail below.
@@ -220,3 +222,4 @@ For clarity, only DMCA notices should go to the Docker Designated Copyright Agen
 18.7 The Terms, and your relationship with Docker, Inc. under the Terms, shall be governed by the laws of the State of California without regard to its conflict of laws provisions. You and Docker, Inc. agree to submit to the exclusive jurisdiction of the courts located within the county of San Francisco, California to resolve any legal matter arising from the Terms.
 
 18.8 Neither party may assign any of its rights or obligations under these Terms, whether by operation of law or otherwise, without the prior written consent of the other party (not to be unreasonably withheld). Notwithstanding the foregoing, either party may assign the entirety of its rights and obligations under these Terms, without consent of the other party, to its affiliate or in connection with a merger, acquisition, corporate reorganization, or sale of all or substantially all of its assets not involving a direct competitor of the other party. A party’s sole remedy for any purported assignment by the other party in breach of this paragraph shall be, at the non-assigning party’s election, termination of your use of the Docker Services upon written notice to the assigning party.
+{% endhighlight %}
