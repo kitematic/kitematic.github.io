@@ -6,6 +6,7 @@ title: Terms of Service
 #### Docker Terms of Service
 
 Effective as of January 7, 2015
+
 1. Your Agreement with Docker
 
 1.1 Your use of the Docker Services are governed by this agreement (the "Terms"). "Docker, Inc." means Docker, Inc., located at 475 Brannan Street, Suite 310, San Francisco, CA 94104, United States, and its subsidiaries or affiliates involved in providing the Docker Services. The “Docker Services” means the services Docker, Inc. makes available through this website (including the Docker Hub website) and any other software or services offered by Docker, Inc. Your use of the Docker open-source application container engine, including without limitation the Kitematic application (collectively, "Docker") is likewise governed by the Terms as described in more detail below.
