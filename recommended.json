@@ -1,0 +1,48 @@
+{
+  "recommended":[
+    "kitematic/html",
+    "kitematic/ghost",
+    "jenkins",
+    "redis",
+    "rethinkdb",
+    "kitematic/minecraft"
+  ],
+  "repos": [
+    {
+      "repo": "kitematic/hello-world-nginx",
+      "gradient_start": "#24B8EB",
+      "gradient_end": "#218CF4",
+      "img": "kitematic_html.png"
+    },
+    {
+      "repo": "ghost",
+      "gradient_start": "#262A2D",
+      "gradient_end": "#14181C",
+      "img": "ghost.png"
+    },
+    {
+      "repo": "jenkins",
+      "gradient_start": "#47728C",
+      "gradient_end": "#325062",
+      "img": "jenkins.png"
+    },
+    {
+      "repo": "redis",
+      "gradient_start": "#DA2D1D",
+      "gradient_end": "#A61F1C",
+      "img": "redis.png"
+    },
+    {
+      "repo": "rethinkdb",
+      "gradient_start": "#1E3F4C",
+      "gradient_end": "#183B47",
+      "img": "rethinkdb.png"
+    },
+    {
+      "repo": "kitematic/minecraft",
+      "gradient_start": "#5A5952",
+      "gradient_end": "#262622",
+      "img": "kitematic_minecraft.png"
+    }
+  ]
+}
