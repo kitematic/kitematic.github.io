@@ -1,0 +1,14 @@
+- title: Introduction
+  docs:
+  - index
+- title: User Manual
+  docs:
+  - managing-volumes
+  - using-docker-cli
+  - known-issues
+  - faq
+- title: Tutorials
+  docs:
+  - nginx-web-server
+  - minecraft-server
+  - rethinkdb-dev-database

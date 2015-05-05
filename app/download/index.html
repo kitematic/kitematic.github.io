@@ -1,0 +1,42 @@
+---
+layout: default
+title: Download Kitematic
+---
+
+<section class="download">
+  {% include nav.html %}
+  <div class="container">
+    <div class="kite-panel">
+      <div class="row">
+        <div class="col-sm-12">
+          <div style="text-align: center;">
+            <h1 style="padding-bottom: 0.5em;">Downloading Kitematic...</h1>
+            <p>In the meanwhile, you can sign up to Docker newsletter to keep up-to-date with future updates.</p>
+            <form action="https://go.pardot.com/l/44082/2015-03-05/3lqgh" method="post" class="signup-form form-inline" role="form">
+              <input name="state" type="hidden" value="on">
+              <div class="input-group">
+                <input name="email" type="email" class="form-control input-lg" placeholder="name@email.com">
+                <span class="input-group-btn">
+                  <button type="submit" class="btn btn-primary btn-lg">Sign Up</button>
+                </span>
+              </div>
+            </form>
+            <div style="padding-bottom: 2em;"></div>
+            <p>Follow us on Twitter</p>
+            <a href="https://twitter.com/kitematic" class="twitter-follow-button" data-show-count="false" data-lang="en" data-show-screen-name="true">Follow @kitematic</a>
+            <div style="padding-bottom: 2em;"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <script>
+    $(document).ready(function () {
+      ga('send', 'event', 'download', 'click');  // value is a number.
+      ga('docker.send', 'event', 'download', 'click');  // value is a number.
+      setTimeout(function () {
+        window.location = 'https://github.com/kitematic/kitematic/releases/download/v0.5.23/Kitematic-0.5.23.zip';
+      }, 1000);
+    });
+  </script>
+</section>
