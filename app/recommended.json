@@ -5,7 +5,20 @@
     "jenkins",
     "redis",
     "rethinkdb",
-    "kitematic/minecraft"
+    "kitematic/minecraft",
+    "elasticsearch",
+    "postgres",
+    "ubuntu-upstart",
+    "memcached",
+    "rabbitmq",
+    "celery",
+    "registry",
+    "mysql",
+    "mongo",
+    "mariadb",
+    "percona",
+    "crate",
+    "websphere-liberty"
   ],
   "repos": [
     {
@@ -43,6 +56,84 @@
       "gradient_start": "#5A5952",
       "gradient_end": "#262622",
       "img": "kitematic_minecraft.png"
+    },
+    {
+      "repo": "elasticsearch",
+      "gradient_start": "#74B63F",
+      "gradient_end": "#569523",
+      "img": "elasticsearch.png"
+    },
+    {
+      "repo": "postgres",
+      "gradient_start": "#2E6093",
+      "gradient_end": "#16406B",
+      "img": "postgres.png"
+    },
+    {
+      "repo": "ubuntu-upstart",
+      "gradient_start": "#DF4700",
+      "gradient_end": "#E74A00",
+      "img": "ubuntu-upstart.png"
+    },
+    {
+      "repo": "memcached",
+      "gradient_start": "#4DB175",
+      "gradient_end": "#1D9E52",
+      "img": "memcached.png"
+    },
+    {
+      "repo": "rabbitmq",
+      "gradient_start": "#FF7F00",
+      "gradient_end": "#F77B00",
+      "img": "rabbitmq.png"
+    },
+    {
+      "repo": "celery",
+      "gradient_start": "#BDD36D",
+      "gradient_end": "#8DAF44",
+      "img": "celery.png"
+    },
+    {
+      "repo": "registry",
+      "gradient_start": "#24B8EB",
+      "gradient_end": "#218CF4",
+      "img": "registry.png"
+    },
+    {
+      "repo": "mysql",
+      "gradient_start": "#2F6073",
+      "gradient_end": "#1A4E62",
+      "img": "mysql.png"
+    },
+    {
+      "repo": "mongo",
+      "gradient_start": "#8F714B",
+      "gradient_end": "#442D21",
+      "img": "mongo.png"
+    },
+    {
+      "repo": "mariadb",
+      "gradient_start": "#D2B08A",
+      "gradient_end": "#956841",
+      "img": "mariadb.png"
+    },
+    {
+      "repo": "percona",
+      "gradient_start": "#FFB600",
+      "gradient_end": "#CD2500",
+      "img": "percona.png"
+    },
+    {
+      "repo": "crate",
+      "gradient_start": "#4BD3F7",
+      "gradient_end": "#30B2D4",
+      "img": "crate.png"
+    },
+    {
+      "repo": "websphere-liberty",
+      "gradient_start": "#CB81E3",
+      "gradient_end": "#AC2FD2",
+      "img": "websphere-liberty.png"
     }
   ]
 }
