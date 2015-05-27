@@ -12,13 +12,11 @@
     "memcached",
     "rabbitmq",
     "celery",
-    "registry",
     "mysql",
     "mongo",
     "mariadb",
     "percona",
     "crate",
-    "websphere-liberty"
   ],
   "repos": [
     {
@@ -94,12 +92,6 @@
       "img": "celery.png"
     },
     {
-      "repo": "registry",
-      "gradient_start": "#24B8EB",
-      "gradient_end": "#218CF4",
-      "img": "registry.png"
-    },
-    {
       "repo": "mysql",
       "gradient_start": "#2F6073",
       "gradient_end": "#1A4E62",
@@ -129,11 +121,5 @@
       "gradient_end": "#30B2D4",
       "img": "crate.png"
     },
-    {
-      "repo": "websphere-liberty",
-      "gradient_start": "#CB81E3",
-      "gradient_end": "#AC2FD2",
-      "img": "websphere-liberty.png"
-    }
   ]
 }
