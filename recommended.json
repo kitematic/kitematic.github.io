@@ -16,7 +16,7 @@
     "mongo",
     "mariadb",
     "percona",
-    "crate",
+    "crate"
   ],
   "repos": [
     {
