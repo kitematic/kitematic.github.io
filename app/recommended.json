@@ -5,7 +5,20 @@
     "jenkins",
     "redis",
     "rethinkdb",
-    "kitematic/minecraft"
+    "kitematic/minecraft",
+    "elasticsearch",
+    "postgres",
+    "ubuntu-upstart",
+    "memcached",
+    "rabbitmq",
+    "celery",
+    "registry",
+    "mysql",
+    "mongo",
+    "mariadb",
+    "percona",
+    "crate",
+    "websphere-liberty"
   ],
   "repos": [
     {
