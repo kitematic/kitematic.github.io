@@ -69,3 +69,6 @@ DEPENDENCIES
   jekyll (~> 2.2.0)
   jekyll-sitemap (~> 0.5.1)
   sass (>= 3.2)
+
+BUNDLED WITH
+   1.10.0
