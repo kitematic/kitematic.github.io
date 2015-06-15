@@ -1,6 +1,125 @@
 {
   "recommended":[
+    "kitematic/html",
+    "kitematic/ghost",
+    "jenkins",
+    "redis",
+    "rethinkdb",
+    "kitematic/minecraft",
+    "elasticsearch",
+    "postgres",
+    "ubuntu-upstart",
+    "memcached",
+    "rabbitmq",
+    "celery",
+    "mysql",
+    "mongo",
+    "mariadb",
+    "percona",
+    "crate"
   ],
   "repos": [
+    {
+      "repo": "kitematic/hello-world-nginx",
+      "gradient_start": "#24B8EB",
+      "gradient_end": "#218CF4",
+      "img": "kitematic_html.png"
+    },
+    {
+      "repo": "ghost",
+      "gradient_start": "#262A2D",
+      "gradient_end": "#14181C",
+      "img": "ghost.png"
+    },
+    {
+      "repo": "jenkins",
+      "gradient_start": "#47728C",
+      "gradient_end": "#325062",
+      "img": "jenkins.png"
+    },
+    {
+      "repo": "redis",
+      "gradient_start": "#DA2D1D",
+      "gradient_end": "#A61F1C",
+      "img": "redis.png"
+    },
+    {
+      "repo": "rethinkdb",
+      "gradient_start": "#1E3F4C",
+      "gradient_end": "#183B47",
+      "img": "rethinkdb.png"
+    },
+    {
+      "repo": "kitematic/minecraft",
+      "gradient_start": "#5A5952",
+      "gradient_end": "#262622",
+      "img": "kitematic_minecraft.png"
+    },
+    {
+      "repo": "elasticsearch",
+      "gradient_start": "#74B63F",
+      "gradient_end": "#569523",
+      "img": "elasticsearch.png"
+    },
+    {
+      "repo": "postgres",
+      "gradient_start": "#2E6093",
+      "gradient_end": "#16406B",
+      "img": "postgres.png"
+    },
+    {
+      "repo": "ubuntu-upstart",
+      "gradient_start": "#DF4700",
+      "gradient_end": "#E74A00",
+      "img": "ubuntu-upstart.png"
+    },
+    {
+      "repo": "memcached",
+      "gradient_start": "#4DB175",
+      "gradient_end": "#1D9E52",
+      "img": "memcached.png"
+    },
+    {
+      "repo": "rabbitmq",
+      "gradient_start": "#FF7F00",
+      "gradient_end": "#F77B00",
+      "img": "rabbitmq.png"
+    },
+    {
+      "repo": "celery",
+      "gradient_start": "#BDD36D",
+      "gradient_end": "#8DAF44",
+      "img": "celery.png"
+    },
+    {
+      "repo": "mysql",
+      "gradient_start": "#2F6073",
+      "gradient_end": "#1A4E62",
+      "img": "mysql.png"
+    },
+    {
+      "repo": "mongo",
+      "gradient_start": "#8F714B",
+      "gradient_end": "#442D21",
+      "img": "mongo.png"
+    },
+    {
+      "repo": "mariadb",
+      "gradient_start": "#D2B08A",
+      "gradient_end": "#956841",
+      "img": "mariadb.png"
+    },
+    {
+      "repo": "percona",
+      "gradient_start": "#FFB600",
+      "gradient_end": "#CD2500",
+      "img": "percona.png"
+    },
+    {
+      "repo": "crate",
+      "gradient_start": "#4BD3F7",
+      "gradient_end": "#30B2D4",
+      "img": "crate.png"
+    }
   ]
 }
