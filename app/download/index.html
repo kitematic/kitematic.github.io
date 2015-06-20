@@ -32,11 +32,19 @@ title: Download Kitematic
   </div>
   <script>
     $(document).ready(function () {
-      ga('send', 'event', 'download', 'click');
-      ga('docker.send', 'event', 'download', 'click');
-      setTimeout(function () {
-        window.location = 'https://github.com/kitematic/kitematic/releases/download/v0.7/Kitematic-0.7.0.zip';
-      }, 1000);
+      if (navigator.appVersion.indexOf('Mac') !== -1) {
+        setTimeout(function () {
+          window.location = 'https://github.com/kitematic/kitematic/releases/download/v0.7.1/Kitematic-0.7.1-Mac.zip';
+        }, 1000);
+        ga('send', 'event', 'download', 'click');
+        ga('docker.send', 'event', 'download', 'click');
+      } else if (navigator.appVersion.indexOf('Win') !== -1) {
+        setTimeout(function () {
+          window.location = 'https://github.com/kitematic/kitematic/releases/download/v0.7.1/KitematicSetup-0.7.1-Windows.exe';
+        }, 1000);
+        ga('send', 'event', 'download', 'click');
+        ga('docker.send', 'event', 'download', 'click');
+      }
     });
   </script>
 </section>
