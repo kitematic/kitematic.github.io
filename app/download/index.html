@@ -6,45 +6,8 @@ title: Download Kitematic
 <section class="download">
   {% include nav.html %}
   <div class="container">
-    <div class="kite-panel">
-      <div class="row">
-        <div class="col-sm-12">
-          <div style="text-align: center;">
-            <h1 style="padding-bottom: 0.5em;">Downloading Kitematic...</h1>
-            <p>In the meanwhile, you can sign up to Docker newsletter to keep up-to-date with future updates.</p>
-            <form action="https://go.pardot.com/l/44082/2015-03-05/3lqgh" method="post" class="signup-form form-inline" role="form">
-              <input name="state" type="hidden" value="on">
-              <div class="input-group">
-                <input name="email" type="email" class="form-control input-lg" placeholder="name@email.com">
-                <span class="input-group-btn">
-                  <button type="submit" class="btn btn-primary btn-lg">Sign Up</button>
-                </span>
-              </div>
-            </form>
-            <div style="padding-bottom: 2em;"></div>
-            <p>Follow us on Twitter</p>
-            <a href="https://twitter.com/docker" class="twitter-follow-button" data-show-count="false" data-lang="en" data-show-screen-name="true">Follow @docker</a>
-            <div style="padding-bottom: 2em;"></div>
-          </div>
-        </div>
-      </div>
-    </div>
   </div>
   <script>
-    $(document).ready(function () {
-      if (navigator.appVersion.indexOf('Mac') !== -1) {
-        setTimeout(function () {
-          window.location = 'https://github.com/kitematic/kitematic/releases/download/v0.7.6/Kitematic-0.7.6-Mac.zip';
-        }, 1000);
-        ga('send', 'event', 'download', 'click');
-        ga('docker.send', 'event', 'download', 'click');
-      } else if (navigator.appVersion.indexOf('Win') !== -1) {
-        setTimeout(function () {
-          window.location = 'https://github.com/kitematic/kitematic/releases/download/v0.7.6/KitematicSetup-0.7.6-Windows-Alpha.exe';
-        }, 1000);
-        ga('send', 'event', 'download', 'click');
-        ga('docker.send', 'event', 'download', 'click');
-      }
-    });
+    window.location = 'https://docker.com/toolbox';
   </script>
 </section>
