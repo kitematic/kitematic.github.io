@@ -56,6 +56,12 @@
       "img": "kitematic_minecraft.png"
     },
     {
+      "repo": "solr",
+      "gradient_start": "#d9411e",
+      "gradient_end": "#c12e24",
+      "img": "solr.png"
+    },
+    {
       "repo": "elasticsearch",
       "gradient_start": "#74B63F",
       "gradient_end": "#569523",
